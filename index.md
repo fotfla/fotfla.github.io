@@ -1,6 +1,0 @@
-- Twitter : [fotfla](https://twitter.com/fotfla)
-- Blog : [Observe Photon](https://fotfla.hatenablog.com/)
-- NEORT :  [fotfla](https://neort.io/8j2dII3Kn8X5rfgfOpQlMrQ84432)
-- Booth : [akkz sketch/フォトフラトン観測所](https://akikaze3ks.booth.pm/)
-- Github : [fotfla](https://github.com/fotfla)
-- Qiita : [fotfla](https://qiita.com/fotfla)
