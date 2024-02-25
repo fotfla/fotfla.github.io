@@ -7,15 +7,28 @@ p {
 a{
   text-decoration: none;
 }
+a:visited{
+    color : blue;
+}
 
-#profile{
+#profile, #work{
   font-size: 2.0em;
 }
 
 .line{
   display: block;
   width: 100%;
-  height: 4px;
-  background: #AAAAAA;
+  height: 1px;
+  background: #cccccc;
   margin: 4px 0;
+}
+
+body{
+  width: 100%;
+}
+
+#main{
+  display: block;
+  width: 50%;
+  margin: 0 auto;
 }
