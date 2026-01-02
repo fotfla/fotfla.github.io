@@ -88,9 +88,6 @@
         - month: 9
           title: "sink"
           url: "https://vrchat.com/home/world/wrld_3d3c7b17-fdbd-4964-81b4-64ec093c2ef4"
-        - month: 7
-          title: "Reflections"
-          url: "https://vrchat.com/home/world/wrld_5a1b8961-8042-43dc-a93a-f37174affecf"
         - month: 2
           title: "voices"
           url: "https://vrchat.com/home/world/wrld_0d11cec5-03e8-4757-844f-506172b2a80e"
@@ -179,3 +176,18 @@
           url: "https://x.com/tokyomax/status/1138732278614351872?s=20"
         - month: 6
           title: "GHOSTCLUB"
+    - name: "VRChat"
+      items:
+        - month: 9
+          title: "KAKURIYO"
+          url: "https://vrchat.com/home/world/wrld_7065a162-4ca7-4ad9-b8bf-db8aac5bd13e/info"
+- year: 2018
+  categories:
+    - name: "VRChat"
+      items:
+        - month: 11
+          title: "Colors of the Space"
+          url: "https://vrchat.com/home/world/wrld_ba0cd74c-ba90-411c-a6b8-3122fc3d4aa8/info"
+        - month: 11
+          title: "VR-808"
+          url: "https://vrchat.com/home/world/wrld_c58f85cb-f411-45fa-abe0-a0b13b77f1f5/info"
