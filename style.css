@@ -1,4 +1,4 @@
-/* http を https に変更し、最新の読み込み方式に更新します */
+/* https に変更し、最新の読み込み方式に更新 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300&display=swap');
 
 /* 全体の余白リセットとボックスモデルの調整 */
@@ -23,6 +23,10 @@ h2 {
   font-weight: 100;
 }
 
+#link{
+  padding: 0 0 24px 0;
+}
+
 #year {
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 100;
@@ -42,14 +46,24 @@ p {
   word-wrap: break-word;
 }
 
+/* リンクの基本設定（灰色） */
+/* !important を付与して、他のスタイルの干渉を防ぎます */
 a {
-  text-decoration: none;
-  /* リンクが長い場合も折り返す */
+  text-decoration: none !important;
+  color: #666666 !important; 
   overflow-wrap: break-word;
+  transition: color 0.2s ease;
 }
 
+/* 訪問済みリンクの色（未訪問と同じにする） */
 a:visited {
-  color: blue;
+  color: #666666 !important;
+}
+
+/* ホバー時の設定 */
+a:hover {
+  color: #000000 !important; /* マウスを乗せた時は黒くする */
+  text-decoration: underline !important; /* 下線を表示 */
 }
 
 #profile,
@@ -67,8 +81,8 @@ a:visited {
 
 #main {
   display: block;
-  width: 90%;      /* スマホなどでは広く取る */
-  max-width: 800px; /* デスクトップで広がりすぎないように制限 */
+  width: 90%;
+  max-width: 800px;
   margin: 0 auto;
   padding: 20px 0;
 }
