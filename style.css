@@ -10,7 +10,8 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow-x: hidden; /* 横スクロールを強制的に防止 */
+  /* 横スクロールを許可する設定に変更 */
+  overflow-x: auto;
 }
 
 h1 {
@@ -23,7 +24,7 @@ h2 {
   font-weight: 100;
 }
 
-#link{
+#link {
   padding: 0 0 24px 0;
 }
 
@@ -41,9 +42,8 @@ p {
   font-weight: 300;
   padding: 0;
   margin: 0 0 0 8px;
-  /* 長いテキストやURLを折り返す設定 */
-  overflow-wrap: break-word;
-  word-wrap: break-word;
+  /* 折り返しを禁止し、一行で表示 */
+  white-space: nowrap;
 }
 
 /* リンクの基本設定（灰色） */
@@ -51,7 +51,8 @@ p {
 a {
   text-decoration: none !important;
   color: #666666 !important; 
-  overflow-wrap: break-word;
+  /* 折り返しを禁止 */
+  white-space: nowrap;
   transition: color 0.2s ease;
 }
 
@@ -85,4 +86,25 @@ a:hover {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px 0;
+}
+
+/* --- LINKSセクションの整列用設定 --- */
+
+/* HTML側で以下のように修正することを想定しています：
+   <p><span class="label">Twitter</span> : <a href="...">...</a></p> 
+*/
+
+#link p {
+  display: flex;
+  align-items: center;
+}
+
+/* ラベル部分の幅を固定してコロンの位置を揃える */
+.label {
+  display: inline-block;
+  width: 3.5rem; /* ラベル（Twitter, Githubなど）の幅。お好みで調整してください */
+}
+
+#link a {
+  margin-left: 0.5rem; /* コロンの後の余白 */
 }
