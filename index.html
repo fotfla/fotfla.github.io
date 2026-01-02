@@ -1,3 +1,7 @@
+---
+# Jekyll Front Matter (空でも必要です)
+---
+<!DOCTYPE html>
 <html lang="ja" dir="ltr">
 
 <head>
@@ -5,6 +9,38 @@
   <title>fotfla</title>
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet" type="text/css">
+  <style>
+    /* 既存のstyle.cssを補完する動的レイアウト用設定 */
+    .timeline {
+      margin-bottom: 60px;
+    }
+
+    .category-group {
+      margin-bottom: 32px;
+    }
+
+    .category-group h2 {
+      margin-bottom: 8px;
+    }
+
+    .month {
+      display: inline-block;
+      width: 1.8rem; /* Noto Sans JPに合わせた幅の微調整 */
+      color: #888;
+      /* 特定のフォント指定を削除し、親要素(pタグ)のNoto Sans JPを継承させます */
+      margin-right: 4px;
+    }
+
+    /* リンクの基本スタイル（style.cssのa:visitedを考慮しつつ調整） */
+    #content a {
+      text-decoration: none;
+      color: #0000ee;
+    }
+
+    #content a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 
 <body>
@@ -12,8 +48,8 @@
     <div id="profile">
       <h1>fotfla</h1>
     </div>
-    <div class="line">
-    </div>
+    <div class="line"></div>
+    
     <div id="link">
       <h2>LINKS</h2>
       <p>Twitter : <a href="https://twitter.com/fotfla">fotfla</a></p>
@@ -22,174 +58,34 @@
       <p>Github : <a href="https://github.com/fotfla">fotfla</a></p>
       <p>Qiita : <a href="https://qiita.com/fotfla">fotfla</a></p>
     </div>
+    
     <div class="line"></div>
+
+    <!-- YAMLデータ（_data/works.yml）に基づいて自動生成 -->
+    {% for year_data in site.data.works %}
     <div class="timeline">
-      <h1 id="year">2025</h1>
+      <h1 id="year">{{ year_data.year }}</h1>
       <div id="content">
-        <div id="works">
-          <h2>Works</h2>
-          <p>08 <a href="https://www.youtube.com/watch?v=hyigk0c5JbI">YouTube Music Weekend 10.0 THE LUV BUGS, 0b4k3 /
-              Live
-              at GHOSTCLUB</a></p>
-        </div>
-        <div id="world">
-          <h2>VRChat</h2>
-          <p>12 <a href="https://vrchat.com/home/world/wrld_e99ef1bd-64a8-4cd5-842b-1bacedfd57b6/info">Light Lines</a>
+        {% for cat in year_data.categories %}
+        <div class="category-group">
+          <h2>{{ cat.name }}</h2>
+          {% for item in cat.items %}
+          <p>
+            <span class="month">{% if item.month < 10 %}0{% endif %}{{ item.month }}</span>
+            {% if item.url %}
+              <a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.title }}</a>
+            {% else %}
+              {{ item.title }}
+            {% endif %}
           </p>
+          {% endfor %}
         </div>
-        <div id="VJ">
-          <h2>Visual Performance</h2>
-          <p>11 <a href="https://theluvbugs.xyz/">THE LUV BUGS 0b4k3 VJ</a></p>
-          <p>10 <a href="https://function-draw.com/tokyo3">draw(tokyo); #3</a></p>
-          <p>05 <a href="https://theluvbugs.xyz/">THE LUV BUGS 0b4k3 VJ</a></p>
-        </div>
+        {% endfor %}
       </div>
     </div>
-    <div class="timeline">
-      <h1 id="year">2024</h1>
-      <div id="content">
-        <div id="works">
-          <h2>Works</h2>
-          <p>05 <a href="https://theghostintheshell.jp/news/deep-dive">『DEEP DIVE in sync with GHOST IN THE SHELL /
-              攻殻機動隊』
-              VRBooth</a></p>
-          <p>02 <a href="https://twitter.com/fotfla/status/1769386945191543075">SANRIO Virtual Festival 2024
-              バーチャル「SHOWBYROCK!! ましゅまいれっしゅ!! キセキかもしれないレゾナンス」</a></p>
-        </div>
-        <div id="world">
-          <h2>VRChat</h2>
-          <p>06 <a href="https://vrchat.com/home/world/wrld_8fb69514-1cc2-46e6-9154-8f22fdff0b50">Oval</a></p>
-        </div>
-        <div id="VJ">
-          <h2>Visual Performance</h2>
-          <p>10 <a href="https://theluvbugs.xyz/">THE LUV BUGS 0b4k3 VJ</a></p>
-          <p>09 <a href="https://x.com/peyoda4/status/1820776922047185088">緻密3(1) 0b4k3 VJ</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="timeline">
-      <h1 id="year">2023</h1>
-      <div id="content">
-        <div id="works">
-          <h2>Works</h2>
-          <p>10 <a href="https://twitter.com/fotfla/status/1709054117010960708">G-SHOCK STORE</a></p>
-          <p>01 <a href="https://twitter.com/fotfla/status/1617175149027131392">SANRIO Virtual Festival 2023 バーチャルパレード
-              ｢Musical Treasure Hunt｣</a></p>
-        </div>
-        <div id="world">
-          <h2>VRChat</h2>
-          <p>03 <a href="https://vrchat.com/home/world/wrld_75f3e46f-6a35-4285-b4da-c9e54f69db66">Projection</a></p>
-        </div>
-        <div id="VJ">
-          <h2>Visual Performance</h2>
-          <p>08 <a href="https://x.com/fotfla/status/1679085161642876928?s=20">Audio/Visual Event "draw();" #3</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="timeline">
-      <h1 id="year">2022</h1>
-      <div id="content">
-        <div id="works">
-          <h2>Works</h2>
-          <p>08 <a href="https://www.youtube.com/watch?v=hxrIiPIM-Sg">新章アイマリンプロジェクトvol.4「ダンシング・クレイジー」MUSIC VIDEO VRChat
-              メタバース水晶宮 制作</a></p>
-          <p>06 <a href="https://art.parco.jp/museumtokyo/detail/?id=985">攻殻機動隊 SAC_2045 EXHIBITION “In The Shell”</a>
-          </p>
-          <p>01 <a href="https://www.youtube.com/watch?v=iNTh2NBBAts">MONDO GROSSO / FORGOTTEN［Vocal：ermhoi (Black Boboi
-              /
-              millennium parade)］</a></p>
-        </div>
-        <div id="world">
-          <h2>VRChat</h2>
-          <p>10 <a href="https://vrchat.com/home/world/wrld_e1d63cf2-9768-4113-9217-c54632bcdfe0">lanterns</a></p>
-          <p>09 <a href="https://vrchat.com/home/world/wrld_3d3c7b17-fdbd-4964-81b4-64ec093c2ef4">sink</a></p>
-          <p>07 <a href="https://vrchat.com/home/world/wrld_5a1b8961-8042-43dc-a93a-f37174affecf">Reflections</a></p>
-          <p>02 <a href="https://vrchat.com/home/world/wrld_0d11cec5-03e8-4757-844f-506172b2a80e">voices</a></p>
-        </div>
-        <div id="VJ">
-          <div>
-            <h2>Visual Performance</h2>
-            <p>07 <a
-                href="https://twitter.com/tokyomax/status/1537684410404724736?s=20&t=SP99y0f9upcCkvT3NAu42w">CHANNEL#22</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="timeline">
-      <h1 id="year">2021</h1>
-      <div id="content">
-        <div id="works">
-          <h2>Works</h2>
-          <p>12 <a href="https://twitter.com/fotfla/status/1470049605857742852"> SANRIO Virtual Fes in Sanrio
-              Puroland</a>
-            :
-            B5 Floor ALT3
-          </p>
-          <p>07 <a href="https://twitter.com/chlomagears/status/1413898502577426439?s=20">Chloma Virtual Store in
-              GHOSTCLUB</a></p>
-          <p>05 <a href="https://xn--pckjp4dudxftf.xn--tckwe/">GHOSTCLUB 5.0</a></p>
-          <p>05 GHOSTWEEK</p>
-        </div>
-        <div id="world">
-          <h2>VRChat</h2>
-          <p>06 <a href="https://vrchat.com/home/world/wrld_5a1b8961-8042-43dc-a93a-f37174affecf">Reflections</a></p>
-          <p>02 <a href="https://vrchat.com/home/world/wrld_bcfb4c62-bd5d-42f4-a60e-d5ecdcf8f2ae">void3</a></p>
-        </div>
-        <div id="VJ">
-          <h2>Visual Performance</h2>
-          <p>12 <a href="https://v-fes.sanrio.co.jp/#topmovie"> SANRIO Virtual Fes in Sanrio Puroland</a></p>
-          <p>05~ GHOSTCLUB</p>
-        </div>
-      </div>
-    </div>
-    <div class="timeline">
-      <h1 id="year">2020</h1>
-      <div id="content">
-        <div id="works">
-          <h2>Works</h2>
-          <p>12 三日坊主を止めるな2</p>
-          <p>12 GHOSTCLUB Xmas </p>
-          <p>11 <a href="https://twitter.com/3k4b0/status/1351831835978858496?s=20">テクノビネガー</a></p>
-          <p>04 <a href="https://twitter.com/trit_techne/status/1252423702072811520?s=20">O.D.E.N</a> <a
-              href="https://ldjam.com/events/ludum-dare/46/o-d-e-n">LINK</a></p>
-          <p>02 <a href="https://akikaze3ks.booth.pm/items/1834005">Shaderでテクスチャを描く</a></p>
-        </div>
-        <div id="world">
-          <h2>VRChat</h2>
-          <p>11 <a href="https://vrchat.com/home/world/wrld_5f231218-f0d6-4c30-9eff-4af9d4c0234a">void2</a></p>
-          <p>11 <a href="https://vrchat.com/home/world/wrld_25869b7d-7286-4c21-82ac-646d28bc8c28">void</a></p>
-          <p>07 <a href="https://vrchat.com/home/world/wrld_1d860a1f-93d2-428c-a329-05f3218697c7">A Miniascape</a></p>
-          <p>05 <a href="https://vrchat.com/home/world/wrld_816236b3-0298-422c-8f37-23a574d6f78e">Angel's Stairway</a>
-          </p>
-          <p>03 <a href="https://vrchat.com/home/world/wrld_fc709db8-ff1f-4654-9469-a1273e463c94">#Shader1weekCompo</a>
-          </p>
-        </div>
-        <div id="VJ">
-          <h2>Visual Performance</h2>
-          <p>12 GHOSTCLUB</p>
-        </div>
-      </div>
-    </div>
-    <div class="timeline">
-      <h1 id="year">2019</h1>
-      <div id="content">
-        <div id="works">
-          <h2>Works</h2>
-        </div>
-        <div id="">
-          <h2></h2>
-        </div>
-        <div id="world">
-          <h2>VRChat</h2>
-        </div>
-        <div id="VJ">
-          <h2>Visual Performance</h2>
-          <p>07 <a href="https://x.com/tokyomax/status/1138732278614351872?s=20">CHANNEL#20</a></p>
-          <p>06 GHOSTCLUB</p>
-        </div>
-      </div>
-    </div>
+    {% endfor %}
+
+  </div>
 </body>
 
 </html>

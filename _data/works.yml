@@ -1,0 +1,181 @@
+- year: 2025
+  categories:
+    - name: "Works"
+      items:
+        - month: 8
+          title: "YouTube Music Weekend 10.0 THE LUV BUGS, 0b4k3 / Live at GHOSTCLUB"
+          url: "https://www.youtube.com/watch?v=hyigk0c5JbI"
+    - name: "VRChat"
+      items:
+        - month: 12
+          title: "Light Lines"
+          url: "https://vrchat.com/home/world/wrld_e99ef1bd-64a8-4cd5-842b-1bacedfd57b6/info"
+    - name: "Visual Performance"
+      items:
+        - month: 11
+          title: "THE LUV BUGS 0b4k3 VJ"
+          url: "https://theluvbugs.xyz/"
+        - month: 10
+          title: "draw(tokyo); #3"
+          url: "https://function-draw.com/tokyo3"
+        - month: 5
+          title: "THE LUV BUGS 0b4k3 VJ"
+          url: "https://theluvbugs.xyz/"
+
+- year: 2024
+  categories:
+    - name: "Works"
+      items:
+        - month: 5
+          title: "『DEEP DIVE in sync with GHOST IN THE SHELL / 攻殻機動隊』 VRBooth"
+          url: "https://theghostintheshell.jp/news/deep-dive"
+        - month: 2
+          title: "SANRIO Virtual Festival 2024 バーチャル「SHOWBYROCK!! ましゅまいれっしゅ!! キセキかもしれないレゾナンス」"
+          url: "https://twitter.com/fotfla/status/1769386945191543075"
+    - name: "VRChat"
+      items:
+        - month: 6
+          title: "Oval"
+          url: "https://vrchat.com/home/world/wrld_8fb69514-1cc2-46e6-9154-8f22fdff0b50"
+    - name: "Visual Performance"
+      items:
+        - month: 10
+          title: "THE LUV BUGS 0b4k3 VJ"
+          url: "https://theluvbugs.xyz/"
+        - month: 9
+          title: "緻密3(1) 0b4k3 VJ"
+          url: "https://x.com/peyoda4/status/1820776922047185088"
+
+- year: 2023
+  categories:
+    - name: "Works"
+      items:
+        - month: 10
+          title: "G-SHOCK STORE"
+          url: "https://twitter.com/fotfla/status/1709054117010960708"
+        - month: 1
+          title: "SANRIO Virtual Festival 2023 バーチャルパレード ｢Musical Treasure Hunt｣"
+          url: "https://twitter.com/fotfla/status/1617175149027131392"
+    - name: "VRChat"
+      items:
+        - month: 3
+          title: "Projection"
+          url: "https://vrchat.com/home/world/wrld_75f3e46f-6a35-4285-b4da-c9e54f69db66"
+    - name: "Visual Performance"
+      items:
+        - month: 8
+          title: 'Audio/Visual Event "draw();" #3'
+          url: "https://x.com/fotfla/status/1679085161642876928?s=20"
+
+- year: 2022
+  categories:
+    - name: "Works"
+      items:
+        - month: 8
+          title: '新章アイマリンプロジェクトvol.4「ダンシング・クレイジー」MUSIC VIDEO VRChat メタバース水晶宮 制作'
+          url: "https://www.youtube.com/watch?v=hxrIiPIM-Sg"
+        - month: 6
+          title: "攻殻機動隊 SAC_2045 EXHIBITION “In The Shell”"
+          url: "https://art.parco.jp/museumtokyo/detail/?id=985"
+        - month: 1
+          title: "MONDO GROSSO / FORGOTTEN［Vocal：ermhoi (Black Boboi / millennium parade)］"
+          url: "https://www.youtube.com/watch?v=iNTh2NBBAts"
+    - name: "VRChat"
+      items:
+        - month: 10
+          title: "lanterns"
+          url: "https://vrchat.com/home/world/wrld_e1d63cf2-9768-4113-9217-c54632bcdfe0"
+        - month: 9
+          title: "sink"
+          url: "https://vrchat.com/home/world/wrld_3d3c7b17-fdbd-4964-81b4-64ec093c2ef4"
+        - month: 7
+          title: "Reflections"
+          url: "https://vrchat.com/home/world/wrld_5a1b8961-8042-43dc-a93a-f37174affecf"
+        - month: 2
+          title: "voices"
+          url: "https://vrchat.com/home/world/wrld_0d11cec5-03e8-4757-844f-506172b2a80e"
+    - name: "Visual Performance"
+      items:
+        - month: 7
+          title: "CHANNEL#22"
+          url: "https://twitter.com/tokyomax/status/1537684410404724736?s=20&t=SP99y0f9upcCkvT3NAu42w"
+
+- year: 2021
+  categories:
+    - name: "Works"
+      items:
+        - month: 12
+          title: "SANRIO Virtual Fes in Sanrio Puroland : B5 Floor ALT3"
+          url: "https://twitter.com/fotfla/status/1470049605857742852"
+        - month: 7
+          title: "Chloma Virtual Store in GHOSTCLUB"
+          url: "https://twitter.com/chlomagears/status/1413898502577426439?s=20"
+        - month: 5
+          title: "GHOSTCLUB 5.0"
+          url: "https://xn--pckjp4dudxftf.xn--tckwe/"
+        - month: 5
+          title: "GHOSTWEEK"
+    - name: "VRChat"
+      items:
+        - month: 6
+          title: "Reflections"
+          url: "https://vrchat.com/home/world/wrld_5a1b8961-8042-43dc-a93a-f37174affecf"
+        - month: 2
+          title: "void3"
+          url: "https://vrchat.com/home/world/wrld_bcfb4c62-bd5d-42f4-a60e-d5ecdcf8f2ae"
+    - name: "Visual Performance"
+      items:
+        - month: 12
+          title: "SANRIO Virtual Fes in Sanrio Puroland"
+          url: "https://v-fes.sanrio.co.jp/#topmovie"
+        - month: 5
+          title: "GHOSTCLUB"
+
+- year: 2020
+  categories:
+    - name: "Works"
+      items:
+        - month: 12
+          title: "三日坊主を止めるな2"
+        - month: 12
+          title: "GHOSTCLUB Xmas"
+        - month: 11
+          title: "テクノビネガー"
+          url: "https://twitter.com/3k4b0/status/1351831835978858496?s=20"
+        - month: 4
+          title: "O.D.E.N"
+          url: "https://ldjam.com/events/ludum-dare/46/o-d-e-n"
+        - month: 2
+          title: "Shaderでテクスチャを描く"
+          url: "https://akikaze3ks.booth.pm/items/1834005"
+    - name: "VRChat"
+      items:
+        - month: 11
+          title: "void2"
+          url: "https://vrchat.com/home/world/wrld_5f231218-f0d6-4c30-9eff-4af9d4c0234a"
+        - month: 11
+          title: "void"
+          url: "https://vrchat.com/home/world/wrld_25869b7d-7286-4c21-82ac-646d28bc8c28"
+        - month: 7
+          title: "A Miniascape"
+          url: "https://vrchat.com/home/world/wrld_1d860a1f-93d2-428c-a329-05f3218697c7"
+        - month: 5
+          title: "Angel's Stairway"
+          url: "https://vrchat.com/home/world/wrld_816236b3-0298-422c-8f37-23a574d6f78e"
+        - month: 3
+          title: "#Shader1weekCompo"
+          url: "https://vrchat.com/home/world/wrld_fc709db8-ff1f-4654-9469-a1273e463c94"
+    - name: "Visual Performance"
+      items:
+        - month: 12
+          title: "GHOSTCLUB"
+
+- year: 2019
+  categories:
+    - name: "Visual Performance"
+      items:
+        - month: 7
+          title: "CHANNEL#20"
+          url: "https://x.com/tokyomax/status/1138732278614351872?s=20"
+        - month: 6
+          title: "GHOSTCLUB"
