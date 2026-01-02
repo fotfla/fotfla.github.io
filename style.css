@@ -1,6 +1,18 @@
 /* http を https に変更し、最新の読み込み方式に更新します */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300&display=swap');
 
+/* 全体の余白リセットとボックスモデルの調整 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* 横スクロールを強制的に防止 */
+}
+
 h1 {
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 200;
@@ -25,10 +37,15 @@ p {
   font-weight: 300;
   padding: 0;
   margin: 0 0 0 8px;
+  /* 長いテキストやURLを折り返す設定 */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 a {
   text-decoration: none;
+  /* リンクが長い場合も折り返す */
+  overflow-wrap: break-word;
 }
 
 a:visited {
@@ -48,12 +65,10 @@ a:visited {
   margin: 4px 0;
 }
 
-body {
-  width: 100%;
-}
-
 #main {
   display: block;
-  width: 50%;
+  width: 90%;      /* スマホなどでは広く取る */
+  max-width: 800px; /* デスクトップで広がりすぎないように制限 */
   margin: 0 auto;
+  padding: 20px 0;
 }
